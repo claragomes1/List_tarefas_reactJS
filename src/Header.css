@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 header#header-main{
     height: 300px;
     background-color: #212121;
@@ -34,6 +36,25 @@ header#header-main{
     margin-top: -20px;
     color: cornsilk;
 }
+
+@media(max-width:414px){/*Galaxy s5, Iphone 6, plus*/
+    header#header-main{
+        height: 200px;
+    }
+
+    #header-main h1{
+        font-family: 'Sifonn';
+        font-size: 60px;
+        margin-top:40px ;
+    }
+
+    #header-main h2{
+        font-size: 40px; 
+    }
+
+}
+
+
 
 @font-face{
     font-family: 'Sifonn';

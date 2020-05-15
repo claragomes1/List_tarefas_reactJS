@@ -25,8 +25,8 @@ class Task extends React.Component {
         const { tasks } = this.props;
 
         return (
-            <div>
-                <table className="centered highlight responsive-table">
+            <div class="table-task">
+                <table className="centered highlight ">
                     <Table tasks = { tasks } />
                 </table>
             </div>

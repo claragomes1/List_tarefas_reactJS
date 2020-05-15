@@ -12,10 +12,37 @@ class App extends React.Component {
   state = {
     tasks: [
       {
-        task: 'Escovar os dentes'
+        task: 'Escovar os dentes depois de comer'
       },
       {
         task: 'Arrumar a cama'
+      },
+      {
+        task: 'Colocar o lixo para fora'
+      },
+      {
+        task: 'Colocar o lixo para fora'
+      },
+      {
+        task: 'Escovar os dentes depois '
+      },
+      {
+        task: 'Arrumar a cama'
+      },
+      {
+        task: 'Colocar o lixo para fora'
+      },
+      {
+        task: 'Colocar o lixo para fora'
+      },
+      {
+        task: 'Escovar os dentes depois '
+      },
+      {
+        task: 'Arrumar a cama'
+      },
+      {
+        task: 'Colocar o lixo para fora'
       },
       {
         task: 'Colocar o lixo para fora'

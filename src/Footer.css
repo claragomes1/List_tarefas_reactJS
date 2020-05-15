@@ -2,33 +2,32 @@
     margin:0;
     padding:0;
     outline:0;
+    bottom: 0;
     box-sizing: border-box;
 }
 
-Footer{
-    height: 40px;
+footer{
+    padding-top: 10px;
 }
 
-
-Footer .footer-basic{
+footer .footer-basic{
     background-color: #212121;
-    position: fixed;
+   
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
     text-align: center;
     height: 30px;
-    padding-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
-Footer .footer-basic h1{
+footer .footer-basic h1{
     font-family: Consolas;
     font-size: 15px;
     color: white;
-    position: relative;
+    padding-top: 7px;
+    margin-bottom: -5px;
 
 }
+

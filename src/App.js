@@ -1,19 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
 import Task from './Task';
 import Header from './Header';
 import NewTask from './NewTask';
-import Footer from './Footer';
 import 'materialize-css/dist/css/materialize.min.css';
+import PopUp from './PopUp';
 
 
 class App extends React.Component {
 
   state = {
     tasks: [
-      {
-        task: 'Escovar os dentes depois de comer'
-      },
       {
         task: 'Arrumar a cama'
       },
@@ -24,7 +21,7 @@ class App extends React.Component {
         task: 'Colocar o lixo para fora'
       },
       {
-        task: 'Escovar os dentes depois '
+        task: 'Escovar os dentes '
       },
       {
         task: 'Arrumar a cama'
@@ -51,18 +48,32 @@ class App extends React.Component {
 
   }
 
+removeTask = index => {
+  const { tasks } = this.state;
+  this.setState (
+    {
+      tasks: tasks.filter((task, posAtual) => {
+        return posAtual !== index;
+      }),
+    }
+  );
+  PopUp.exibeMensagem("error", "Tarefa removida");
+}
+
+escutadorDeSubmit = task => { /*Passo a task, para setar o conjunto de tasks e fazer o merge da nova task*/
+  this.setState({ tasks: [...this.state.tasks, task] })
+}
 
 
   render() {
     return (
-      <fragment>
+      <Fragment>
         <Header />
         <div className="container">
-          <NewTask />
-          <Task tasks={this.state.tasks} />
+          <NewTask escutadorDeSubmit={this.escutadorDeSubmit}/>
+          <Task tasks={this.state.tasks} removeTask = { this.removeTask }/>
         </div>
-        <Footer />
-      </fragment>
+      </Fragment>
     );
   }
 

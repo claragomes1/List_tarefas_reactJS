@@ -54,14 +54,12 @@ header#header-main{
 
 }
 
-
-
 @font-face{
     font-family: 'Sifonn';
-    src: url(SIFONN_BASIC_OUTLINE.otf)
+    src: url("./fonts/SIFONN_BASIC_OUTLINE.otf")
 }
 
 @font-face{
     font-family: 'Lato';
-    src: url(Lato-Regular.ttf);
+    src: url("./fonts/Lato-Regular.ttf");
 }

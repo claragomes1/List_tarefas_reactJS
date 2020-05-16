@@ -6,7 +6,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  float: center;
 }
 
 .add-task form{
@@ -15,7 +14,6 @@ flex-direction: row;
 align-items: center;
 width: 100%;
 justify-content: center;
-float: center;
 }
 
 .add-task form .input-add{
@@ -34,7 +32,6 @@ float: center;
   border-right: #48F2FD;
   border-style: solid;
   border-width: 2px;
-  float: center;
 }
 
 .add-task form .btn-add{
@@ -61,7 +58,6 @@ float: center;
   font-size: 40px;
   text-align: center;
   padding-top: 6px;
-  float: center;
   color: aliceblue;
 }
 
@@ -70,7 +66,7 @@ float: center;
 }
 
 
-@media(max-width:320px){/*Iphone 5*/
+@media(max-width:370px){
 
   .add-task{
     margin: 20px 10px 20px 0;
@@ -98,7 +94,7 @@ float: center;
   
 }
 
-@media(max-width:400px){ /*Galaxy s5*/
+@media(max-width:400px){ 
 
   .add-task{
     margin: 20px 10px 20px 0;
@@ -106,7 +102,7 @@ float: center;
 
 }
 
-@media(max-width:414px){/*Plus*/
+@media(max-width:640px){
   .add-task form .btn-add{
     padding-left: 70px;
 
@@ -115,7 +111,7 @@ float: center;
 
 }
 
-@media(max-width:1024px){/*IPad Pro*/
+@media(max-width:1350px){
   .add-task form .btn-add{
     margin-left: 30px;
 
@@ -123,7 +119,7 @@ float: center;
 
 }
 
-@media(max-width:1680px){/*Desktop*/
+@media(max-width:3120px){
   .add-task form .btn-add button{
     margin-right: 10px;
   }

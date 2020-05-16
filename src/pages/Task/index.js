@@ -1,9 +1,10 @@
 import React from 'react';
-import './Task.css';
+import './Styles.css';
+
 
 
 const Table = props => {
-    const rows = props.tasks.map((row, index) => {/*row é o elemento do momento da interação e o index que é a posição*/
+    const rows = props.tasks.map((row, index) => {/*row é o elemento do momento da interação e o index é a posição*/
         return (/*key é para o react saber internamente quel elemento está sendo modificado*/
             <tr key={index}>
                 <td className="col s6">{row.task}</td> 

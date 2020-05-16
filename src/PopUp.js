@@ -1,6 +1,6 @@
 import M from 'materialize-css';
 
-const PopUp = { /*JSON*/
+const PopUp = { 
     exibeMensagem: (status, msg) => {
         if(status === "error"){
             M.toast({html: msg, classes: 'cyan', displayLength: 2000});

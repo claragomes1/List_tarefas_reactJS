@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
-import './App.css';
-import Task from './Task';
-import Header from './Header';
-import NewTask from './NewTask';
+import Task from './pages/Task';
+import Header from './pages/Header';
+import NewTask from './pages/NewTask';
 import 'materialize-css/dist/css/materialize.min.css';
 import PopUp from './PopUp';
 
@@ -60,7 +59,7 @@ removeTask = index => {
   PopUp.exibeMensagem("error", "Tarefa removida");
 }
 
-escutadorDeSubmit = task => { /*Passo a task, para setar o conjunto de tasks e fazer o merge da nova task*/
+escutadorDeSubmit = task => { 
   this.setState({ tasks: [...this.state.tasks, task] })
 }
 

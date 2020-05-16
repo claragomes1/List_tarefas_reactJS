@@ -1,7 +1,7 @@
 import React from 'react';
-import FormValidator from './FormValidator';
-import './NewTask.css'
-import PopUp from './PopUp';
+import FormValidator from '../../FormValidator';
+import './Styles.css'
+import PopUp from '../../PopUp';
 
 class NewTask extends React.Component {
 
